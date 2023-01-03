@@ -1,0 +1,51 @@
+<archetype-descriptor
+	xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd
+        http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+	xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	name="${artifactId}">
+<requiredProperties>
+	<requiredProperty key="module1">
+		<defaultValue>module1</defaultValue>
+	</requiredProperty>
+
+	<requiredProperty key="module2">
+		<defaultValue>module2</defaultValue>
+	</requiredProperty>
+ </requiredProperties>
+	  <modules>
+    <module id="${module1}" dir="__module1__" name="${module1}">
+      <fileSets>
+        <fileSet filtered="true" packaged="true">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" packaged="true">
+          <directory>src/test/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="${module2}" dir="__module2__" name="${module2}">
+      <fileSets>
+        <fileSet filtered="true" packaged="true">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" packaged="true">
+          <directory>src/test/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+  </modules>
+
+</archetype-descriptor>
