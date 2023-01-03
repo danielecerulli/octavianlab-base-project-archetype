@@ -28,6 +28,17 @@
   <developerConnection>scm:git:ssh://github.com:danielecerulli/octavianlab-base-project-archetype.git</developerConnection>
   <url>http://github.com/danielecerulli/octavianlab-base-project-archetype/tree/release/stage</url>
  </scm>
+ 
+ <distributionManagement>
+  <snapshotRepository>
+   <id>octavianlab-base-project</id>
+   <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+  </snapshotRepository>
+  <repository>
+   <id>octavianlab-base-project</id>
+   <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+  </repository>
+ </distributionManagement>
   
   <properties>
     <maven.compiler.source>11</maven.compiler.source>
