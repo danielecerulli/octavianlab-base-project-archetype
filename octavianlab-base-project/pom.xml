@@ -7,6 +7,28 @@
   <name>${project.groupId}:${project.artifactId}</name>
   <description>Maven archetype which can be used to generate a multi module JavaEE 8 project in java 11</description>
   
+  <licenses>
+  <license>
+    <name>MIT License</name>
+    <url>http://www.opensource.org/licenses/mit-license.php</url>
+  </license>
+</licenses>
+  
+  <developers>
+    <developer>
+      <name>Daniele Cerulli</name>
+      <email>d.cerulli@octavianlab.com</email>
+      <organization>Octavian Lab</organization>
+      <organizationUrl>https://www.octavianlab.com/it/</organizationUrl>
+    </developer>
+  </developers>
+  
+  <scm>
+  <connection>scm:git:git://github.com/danielecerulli/octavianlab-base-project-archetype.git</connection>
+  <developerConnection>scm:git:ssh://github.com:danielecerulli/octavianlab-base-project-archetype.git</developerConnection>
+  <url>http://github.com/danielecerulli/octavianlab-base-project-archetype/tree/release/stage</url>
+ </scm>
+  
   <properties>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
